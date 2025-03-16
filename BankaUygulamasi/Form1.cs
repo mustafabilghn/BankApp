@@ -18,7 +18,7 @@ namespace BankaUygulamasi
             InitializeComponent();
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-AOEQHQU;Initial Catalog=DbBankaTest;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-JQ02U7VO;Initial Catalog=DbBankaTest;Integrated Security=True");
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

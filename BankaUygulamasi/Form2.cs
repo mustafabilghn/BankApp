@@ -17,8 +17,7 @@ namespace BankaUygulamasi
         {
             InitializeComponent();
         }
-
-        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-AOEQHQU;Initial Catalog=DbBankaTest;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-JQ02U7VO;Initial Catalog=DbBankaTest;Integrated Security=True");
         void liste()
         {
             conn.Open();
@@ -97,6 +96,7 @@ namespace BankaUygulamasi
             }
             conn.Close();
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
             conn.Open();
@@ -105,7 +105,7 @@ namespace BankaUygulamasi
             komut.Parameters.AddWithValue("@p2", comboBox1.Text);
             komut.ExecuteNonQuery();
             conn.Close();
-           
+
             conn.Open();
             SqlCommand komut2 = new SqlCommand("Update TblHesap set Bakiye=Bakiye-@k1 where HesapNo=@k2", conn);
             komut2.Parameters.AddWithValue("@k1", decimal.Parse(textBox1.Text));
@@ -141,7 +141,21 @@ namespace BankaUygulamasi
                 gelen();
                 gonderilen();
             }
-            
+
+        }
+
+        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Çıkış yapmak istediğinizden emin misiniz?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Environment.Exit(0);
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
     }
 }
