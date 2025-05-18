@@ -1,4 +1,4 @@
-﻿namespace BankaUygulamasi
+﻿namespace BankApp
 {
     partial class Form1
     {
@@ -102,7 +102,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::BankaUygulamasi.Properties.Resources._8176383;
+//            this.pictureBox1.Image = global::BankApp.Properties.Resources._8176383;
             this.pictureBox1.Location = new System.Drawing.Point(27, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 50);

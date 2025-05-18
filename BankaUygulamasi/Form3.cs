@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace BankaUygulamasi
+namespace BankApp
 {
     public partial class Form3 : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace BankaUygulamasi
+﻿namespace BankApp
 {
     partial class Form3
     {
