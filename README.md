@@ -7,6 +7,10 @@ This is a simple yet functional **Banking System** desktop application built wit
 - Sending money between users
 - Transaction history tracking
 
+## 📸 Images
+![Loginpage](screenshots/Login.png)
+![Form](Form1.png)
+
 ## 🧩 Features
 
 - 🔐 Secure login system (Customer Login with Account Number)
