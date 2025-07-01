@@ -9,7 +9,7 @@ This is a simple yet functional **Banking System** desktop application built wit
 
 ## 📸 Images
 ![Loginpage](screenshots/Login.png)
-![Form](Form1.png)
+![Form](screenshots/Form1.png)
 
 ## 🧩 Features
 
